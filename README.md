@@ -25,6 +25,9 @@ open **Plugin Marketplace → Add → Add Plugin Marketplace** and paste the clo
 directory, then install **Code Modernization** under
 **Personal → dev-code-modernization**. Start with `/code-modernization:modernize`.
 
+**Full step-by-step guide — installing, your first modernization end to end, what every
+command produces, where you decide, troubleshooting:** [docs/usage.md](docs/usage.md)
+
 Port notes (what changed from the Claude Code original and why) are in
 [plugins/code-modernization/README.md](plugins/code-modernization/README.md).
 The README banner lives in [docs/banner.svg](docs/banner.svg) — how to reuse or adapt it:

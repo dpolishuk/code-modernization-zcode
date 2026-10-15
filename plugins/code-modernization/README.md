@@ -63,11 +63,15 @@ throughout and is never edited.
 
 ## Install (local dev marketplace)
 
-1. In ZCode: **Plugin Marketplace → Add → Add Plugin Marketplace**, paste
-   `<workspace>/plugins/` (the directory holding `marketplace.json`).
-2. **Personal → dev-code-modernization → Code Modernization → Install**.
-3. Try it on something small:
+1. Clone this repository.
+2. In ZCode: **Plugin Marketplace → Add → Add Plugin Marketplace**, paste
+   the clone's `plugins/` directory (the one holding `marketplace.json`).
+3. **Personal → dev-code-modernization → Code Modernization → Install**.
+4. Try it on something small:
    `/code-modernization:modernize mysystem --source /path/to/legacy/code`
+
+A complete walkthrough (every command, every artifact, every human gate, troubleshooting)
+is in the repository's [docs/usage.md](../../docs/usage.md).
 
 ## Development notes
 
