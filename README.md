@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="docs/banner.svg" width="880" alt="Code Modernization for ZCode — guided legacy-codebase modernization with independent behavioral proof">
+</p>
+
 # code-modernization — ZCode port workspace
 
 This workspace holds a ZCode port of Anthropic's
@@ -16,9 +20,12 @@ plugins/
     assets/                     report template + interactive topology viewer (+ vendored mermaid)
 ```
 
-To install: open **Plugin Marketplace → Add → Add Plugin Marketplace** in ZCode and paste this
-workspace's `plugins/` directory, then install **Code Modernization** under
+To install: `git clone https://github.com/dpolishuk/code-modernization-zcode.git`, then in ZCode
+open **Plugin Marketplace → Add → Add Plugin Marketplace** and paste the clone's `plugins/`
+directory, then install **Code Modernization** under
 **Personal → dev-code-modernization**. Start with `/code-modernization:modernize`.
 
 Port notes (what changed from the Claude Code original and why) are in
 [plugins/code-modernization/README.md](plugins/code-modernization/README.md).
+The README banner lives in [docs/banner.svg](docs/banner.svg) — how to reuse or adapt it:
+[docs/banner.md](docs/banner.md).

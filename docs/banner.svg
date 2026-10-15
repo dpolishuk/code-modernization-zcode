@@ -1,0 +1,117 @@
+<svg width="1280" height="320" viewBox="0 0 1280 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Code Modernization for ZCode — guided legacy-codebase modernization with independent behavioral proof">
+  <title>Code Modernization for ZCode</title>
+
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1a1b20"/>
+      <stop offset="0.55" stop-color="#1e1e1e"/>
+      <stop offset="1" stop-color="#242019"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.42" r="0.55">
+      <stop offset="0" stop-color="#cc783c" stop-opacity="0.10"/>
+      <stop offset="1" stop-color="#cc783c" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="acc" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e0975f"/>
+      <stop offset="1" stop-color="#cc783c"/>
+    </linearGradient>
+    <pattern id="dots" width="26" height="26" patternUnits="userSpaceOnUse">
+      <circle cx="1.5" cy="1.5" r="1.2" fill="#ffffff" fill-opacity="0.045"/>
+    </pattern>
+    <clipPath id="rr"><rect x="0" y="0" width="1280" height="320" rx="24"/></clipPath>
+  </defs>
+
+  <g clip-path="url(#rr)">
+    <rect width="1280" height="320" fill="url(#bg)"/>
+    <rect width="1280" height="320" fill="url(#glow)"/>
+    <rect width="1280" height="320" fill="url(#dots)"/>
+    <rect x="0.5" y="0.5" width="1279" height="319" rx="23.5" fill="none" stroke="#3a3d45" stroke-opacity="0.7"/>
+
+    <!-- ── Legacy card ─────────────────────────────────────────────── -->
+    <g font-family="ui-monospace, 'SF Mono', 'Cascadia Code', Menlo, Consolas, monospace">
+      <rect x="52" y="84" width="340" height="170" rx="14" fill="#202227" stroke="#32353d"/>
+      <text x="72" y="103" font-size="11" letter-spacing="1.5" fill="#8b8f99">LEGACY · COBOL / JCL</text>
+      <circle cx="360" cy="99" r="3" fill="#5c6068"/>
+      <circle cx="348" cy="99" r="3" fill="#52565e"/>
+      <circle cx="336" cy="99" r="3" fill="#484c54"/>
+      <line x1="52" y1="112" x2="392" y2="112" stroke="#2c2f36"/>
+
+      <text x="72" y="138" font-size="14">
+        <tspan fill="#8089b8">MOVE </tspan><tspan fill="#96b0c6">100 </tspan><tspan fill="#8089b8">TO </tspan><tspan fill="#c2b28a">WS-AMT</tspan><tspan fill="#8a8f99">.</tspan>
+      </text>
+      <text x="72" y="162" font-size="14">
+        <tspan fill="#8089b8">COMPUTE </tspan><tspan fill="#c2b28a">WS-TAX</tspan><tspan fill="#8089b8"> ROUNDED</tspan><tspan fill="#8a8f99"> =</tspan>
+      </text>
+      <text x="86" y="186" font-size="14">
+        <tspan fill="#c2b28a">WS-AMT</tspan><tspan fill="#8a8f99"> * </tspan><tspan fill="#96b0c6">0.21</tspan><tspan fill="#8a8f99">.</tspan>
+      </text>
+      <text x="72" y="210" font-size="14">
+        <tspan fill="#8089b8">PERFORM </tspan><tspan fill="#b6bac2">200-APPLY</tspan>
+      </text>
+      <text x="86" y="234" font-size="14">
+        <tspan fill="#8089b8">UNTIL </tspan><tspan fill="#c2b28a">EOF-FLAG</tspan><tspan fill="#8a8f99">.</tspan>
+      </text>
+    </g>
+
+    <!-- ── Modern card ─────────────────────────────────────────────── -->
+    <g font-family="ui-monospace, 'SF Mono', 'Cascadia Code', Menlo, Consolas, monospace">
+      <rect x="888" y="84" width="340" height="170" rx="14" fill="#22242a" stroke="#34373f"/>
+      <text x="908" y="103" font-size="11" letter-spacing="1.5" fill="#8b8f99">MODERN · TYPESCRIPT</text>
+      <rect x="1136" y="88" width="76" height="19" rx="9.5" fill="#1c3328" stroke="#2f5c43"/>
+      <path d="M 1146 97.5 l 3.4 3.4 l 6 -6.6" fill="none" stroke="#7ec699" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="1184" y="102" font-size="10" letter-spacing="1" fill="#7ec699" text-anchor="middle">PROVEN</text>
+      <line x1="888" y1="112" x2="1228" y2="112" stroke="#2e3139"/>
+
+      <text x="908" y="138" font-size="14">
+        <tspan fill="#d98a4f">const </tspan><tspan fill="#d4d4d4">tax = </tspan><tspan fill="#e0b08a">round</tspan><tspan fill="#9398a1">(</tspan><tspan fill="#d4d4d4">amount * </tspan><tspan fill="#c2b28a">TAX</tspan><tspan fill="#9398a1">);</tspan>
+      </text>
+      <text x="908" y="162" font-size="14">
+        <tspan fill="#d98a4f">if </tspan><tspan fill="#9398a1">(!</tspan><tspan fill="#d4d4d4">eligible</tspan><tspan fill="#9398a1">) </tspan><tspan fill="#d98a4f">return </tspan><tspan fill="#e0b08a">skip</tspan><tspan fill="#9398a1">();</tspan>
+      </text>
+      <text x="908" y="186" font-size="14" fill="#6f7681">
+        <tspan>// RULE-017 · behavior pinned</tspan>
+      </text>
+      <text x="908" y="210" font-size="14">
+        <tspan fill="#e0b08a">expect</tspan><tspan fill="#9398a1">(</tspan><tspan fill="#d4d4d4">tax</tspan><tspan fill="#9398a1">).</tspan><tspan fill="#e0b08a">toEqual</tspan><tspan fill="#9398a1">(</tspan><tspan fill="#9fbf7f">baseline</tspan><tspan fill="#9398a1">);</tspan>
+      </text>
+      <text x="908" y="234" font-size="14">
+        <tspan fill="#7ec699">✓ canary: a break turns tests red</tspan>
+      </text>
+    </g>
+
+    <!-- ── Center column ───────────────────────────────────────────── -->
+    <g>
+      <path d="M 606 84 L 622 96 L 606 108" fill="none" stroke="url(#acc)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M 634 84 L 650 96 L 634 108" fill="none" stroke="url(#acc)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M 662 84 L 678 96 L 662 108" fill="none" stroke="url(#acc)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" opacity="0.55"/>
+
+      <text x="640" y="152" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" font-size="44" font-weight="700" fill="#f2f2f4" letter-spacing="0.5">Code Modernization</text>
+
+      <rect x="576" y="168" width="128" height="26" rx="13" fill="url(#acc)"/>
+      <text x="640" y="185.5" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="700" fill="#1c1a17" letter-spacing="2.5">FOR ZCODE</text>
+
+      <text x="640" y="222" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" font-size="15" fill="#a8adb6">Guided legacy-codebase modernization</text>
+      <text x="640" y="242" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" font-size="15" fill="#a8adb6">with independent behavioral proof</text>
+    </g>
+
+    <!-- ── Pipeline chips ──────────────────────────────────────────── -->
+    <g font-family="ui-monospace, 'SF Mono', 'Cascadia Code', Menlo, Consolas, monospace" font-size="12">
+      <rect x="369" y="272" width="89" height="24" rx="12" fill="#26282e" stroke="#34373f"/>
+      <text x="413.5" y="288" text-anchor="middle" fill="#c9cdd4">/modernize</text>
+      <rect x="470" y="272" width="74" height="24" rx="12" fill="#26282e" stroke="#34373f"/>
+      <text x="507" y="288" text-anchor="middle" fill="#c9cdd4">/assess</text>
+      <rect x="556" y="272" width="53" height="24" rx="12" fill="#26282e" stroke="#34373f"/>
+      <text x="582.5" y="288" text-anchor="middle" fill="#c9cdd4">/map</text>
+      <rect x="621" y="272" width="125" height="24" rx="12" fill="#26282e" stroke="#34373f"/>
+      <text x="683.5" y="288" text-anchor="middle" fill="#c9cdd4">/extract-rules</text>
+      <rect x="758" y="272" width="67" height="24" rx="12" fill="#26282e" stroke="#34373f"/>
+      <text x="791.5" y="288" text-anchor="middle" fill="#c9cdd4">/brief</text>
+      <rect x="837" y="272" width="74" height="24" rx="12" fill="#26282e" stroke="#34373f"/>
+      <text x="874" y="288" text-anchor="middle" fill="#c9cdd4">/verify</text>
+    </g>
+
+    <!-- ── Corners ─────────────────────────────────────────────────── -->
+    <text x="52" y="306" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="10" fill="#5a5f68">Apache-2.0</text>
+    <text x="1228" y="306" text-anchor="end" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="10" fill="#5a5f68">github.com/dpolishuk/code-modernization-zcode</text>
+  </g>
+</svg>
