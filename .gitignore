@@ -1,0 +1,17 @@
+# Runtime artifacts created when the plugin is used in this workspace
+analysis/
+modernized/
+legacy/
+.modernize/
+
+# ZCode / tooling state
+.zcode/
+.zcode-plugin-seed.json
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# OS / editors
+.DS_Store

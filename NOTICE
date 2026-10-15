@@ -1,0 +1,16 @@
+This repository is a port of the code-modernization plugin from
+anthropics/claude-plugins-official (https://github.com/anthropics/claude-plugins-official,
+plugins/code-modernization, Apache License 2.0) to the ZCode plugin format.
+
+Copyright for the original plugin and its scripts, agent definitions, command
+prompts, workflow logic, report template and topology viewer belongs to
+Anthropic, PBC; this port modifies and redistributes that work under the
+Apache License 2.0 (see LICENSE), with these changes: commands adapted to the
+ZCode plugin format ($ARGUMENTS parsing, CreateWorkflow integration,
+filesystem-based source protection in preflight Check 7), workflows rewritten
+from the Claude Code workflow runner to ZCode dynamic-workflow TypeScript,
+telemetry and function-hook UI modules removed, and agent tool lists adapted
+to ZCode tool names. See plugins/code-modernization/README.md for details.
+
+The vendored topology viewer embeds Mermaid (MIT), see
+plugins/code-modernization/assets/vendor/LICENSE-mermaid.txt.

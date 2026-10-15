@@ -1,0 +1,7 @@
+{
+  "name": "@zcode-port/code-modernization-plugin",
+  "version": "0.1.0",
+  "private": true,
+  "license": "Apache-2.0",
+  "description": "ZCode port of Anthropic's code-modernization plugin: guided legacy-codebase modernization with independent behavioral proof."
+}

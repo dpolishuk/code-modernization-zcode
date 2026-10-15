@@ -1,0 +1,10 @@
+{
+  "name": "code-modernization",
+  "version": "0.1.0",
+  "description": "Guided modernization for any legacy codebase: start with /code-modernization:modernize, get an assessment, an interactive map, the business rules mined from the code, and a plan you approve, then an upgrade, a rewrite or a rebuild with independent proof that the new code behaves like the old. Includes security hardening, a one-page report, and specialist agents. ZCode port of Anthropic's code-modernization plugin (Apache 2.0).",
+  "author": {
+    "name": "Anthropic (ZCode port)"
+  },
+  "license": "Apache-2.0",
+  "commands": "./commands"
+}

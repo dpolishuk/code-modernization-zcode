@@ -1,0 +1,15 @@
+{
+  "name": "dev-code-modernization",
+  "plugins": [
+    {
+      "name": "code-modernization",
+      "source": "./code-modernization",
+      "version": "0.1.0",
+      "description": "Guided modernization for any legacy codebase: assessment, an interactive map, business-rule mining, an approved plan, then an uplift, rewrite or rebuild with independent proof that the new code behaves like the old. ZCode port of Anthropic's code-modernization plugin (Apache 2.0).",
+      "displayName": "Code Modernization",
+      "displayName_i18n": { "zh-CN": "代码现代化" },
+      "description_i18n": { "zh-CN": "面向任意遗留代码库的引导式现代化：评估、交互式拓扑图、业务规则挖掘、需人工批准的方案，随后进行同栈升级、跨栈重写或架构重建，并以独立证据证明新旧行为一致。移植自 Anthropic 的 code-modernization 插件（Apache 2.0）。" },
+      "category": "developer-tools"
+    }
+  ]
+}
